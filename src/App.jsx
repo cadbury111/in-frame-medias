@@ -1,4 +1,4 @@
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import Clients from "./components/Clients";
 import { useState } from "react";
 import ProjectForm from "./components/ProjectForm";
