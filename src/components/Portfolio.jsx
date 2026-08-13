@@ -2,24 +2,28 @@ function Portfolio() {
   const projects = [
     {
       id: "01",
+      title: "Client Work 01",
       category: "REELS",
       image: "/images/client-01.jpg",
       link: "https://www.instagram.com/reel/DTcqb0Ak5tf/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
     },
     {
       id: "02",
+      title: "Client Work 02",
       category: "REELS",
       image: "/images/client-02.jpg",
       link: "https://www.instagram.com/reel/DVc5MdnkUw8/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
     },
     {
       id: "03",
+      title: "Client Work 03",
       category: "PERSONAL BRAND",
       image: "/images/client-03.jpg",
       link: "https://www.instagram.com/reel/DV0uPbRASHF/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
     },
     {
       id: "04",
+      title: "Client Work 04",
       category: "BRAND",
       image: "/images/client-04.jpg",
       link: "https://www.instagram.com/reel/DTaPLnYk9DQ/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
