@@ -102,17 +102,20 @@ function Portfolio() {
               </div>
 
               <div className="portfolio-info">
-                 <h3>{project.title}</h3>
 
-                <div>
-                  <span className="portfolio-category">
+                <h3>{project.title}</h3>
+
+                <div className="portfolio-meta">
+
+                  <span>
                     {project.category}
                   </span>
-                </div>
 
-                <span className="portfolio-view">
-                  VIEW PROJECT ↗
-                </span>
+                  <span className="portfolio-view">
+                    VIEW PROJECT ↗
+                  </span>
+
+                </div>
 
               </div>
 
