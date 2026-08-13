@@ -102,6 +102,7 @@ function Portfolio() {
               </div>
 
               <div className="portfolio-info">
+                 <h3>{project.title}</h3>
 
                 <div>
                   <span className="portfolio-category">
