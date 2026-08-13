@@ -2,31 +2,27 @@ function Portfolio() {
   const projects = [
     {
       id: "01",
-      title: "Client Work 01",
       category: "REELS",
       image: "/images/client-01.jpg",
-      link: "https://www.instagram.com/reel/DTcqb0Ak5tf/",
+      link: "https://www.instagram.com/reel/DTcqb0Ak5tf/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
     },
     {
       id: "02",
-      title: "Client Work 02",
       category: "REELS",
       image: "/images/client-02.jpg",
-      link: "https://www.instagram.com/reel/DVc5MdnkUw8/",
+      link: "https://www.instagram.com/reel/DVc5MdnkUw8/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
     },
     {
       id: "03",
-      title: "Client Work 03",
       category: "PERSONAL BRAND",
       image: "/images/client-03.jpg",
-      link: "https://www.instagram.com/reel/DV0uPbRASHF/",
+      link: "https://www.instagram.com/reel/DV0uPbRASHF/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
     },
     {
       id: "04",
-      title: "Client Work 04",
       category: "BRAND",
       image: "/images/client-04.jpg",
-      link: "https://www.instagram.com/reel/DTaPLnYk9DQ/",
+      link: "https://www.instagram.com/reel/DTaPLnYk9DQ/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
     },
   ];
 
@@ -71,43 +67,51 @@ function Portfolio() {
           <article
             className="portfolio-card"
             key={project.id}
-            onClick={() => window.open(project.link, "_blank")}
-            style={{ cursor: "pointer" }}
           >
 
-            <div className="portfolio-media">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolio-link"
+            >
 
-              <img
-                src={project.image}
-                alt={project.title}
-              />
+              <div className="portfolio-media">
 
-              <div className="portfolio-overlay">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                />
 
-                <span className="project-number">
-                  {project.id}
-                </span>
+                <div className="portfolio-overlay">
 
-                <span className="project-arrow">
-                  ↗
+                  <span className="project-number">
+                    {project.id}
+                  </span>
+
+                  <span className="project-arrow">
+                    ↗
+                  </span>
+
+                </div>
+
+              </div>
+
+              <div className="portfolio-info">
+
+                <div>
+                  <span className="portfolio-category">
+                    {project.category}
+                  </span>
+                </div>
+
+                <span className="portfolio-view">
+                  VIEW PROJECT ↗
                 </span>
 
               </div>
 
-            </div>
-
-            <div className="portfolio-info">
-
-              <div>
-                <h3>{project.title}</h3>
-                <span>{project.category}</span>
-              </div>
-
-              <span className="portfolio-view">
-                VIEW PROJECT ↗
-              </span>
-
-            </div>
+            </a>
 
           </article>
         ))}
