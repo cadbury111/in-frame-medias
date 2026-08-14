@@ -188,24 +188,20 @@ ${formData.message}
     {videoCount} Videos
   </div>
 
-  
-
   <div className="estimate-price">
     ₹{totalPrice.toLocaleString("en-IN")}
   </div>
-  <div className="estimate-price">
-  ₹{totalPrice.toLocaleString("en-IN")}
-</div>
 
-<p>
-  Estimated monthly investment
-</p>
+  <p>
+    Estimated monthly investment
+  </p>
 
-<div className="estimate-line"></div>
+  <div className="estimate-line"></div>
 
-<small>
-  Starting at ₹1,500 per video
-</small>
+  <small>
+    ₹{pricePerVideo.toLocaleString("en-IN")} per video
+  </small>
+
 </aside>
 
 
