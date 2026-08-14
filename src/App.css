@@ -243,3 +243,14 @@
   }
 
 }
+.estimate-starting {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  color: #999;
+}
+
+.estimate-price {
+  font-size: 64px;
+  line-height: 1;
+  margin: 10px 0 15px;
+}
