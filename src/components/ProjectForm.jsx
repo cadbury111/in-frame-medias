@@ -50,7 +50,7 @@ ${formData.message}
     message
   )}`;
 
-  window.open(whatsappUrl, "_blank");
+  window.location.href = whatsappUrl;
 };
 
   return (
