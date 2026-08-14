@@ -182,27 +182,31 @@ ${formData.message}
 
         <aside className="project-estimate">
 
-          <span>YOUR ESTIMATE</span>
+  <span>YOUR ESTIMATE</span>
 
-          <div className="estimate-videos">
-            {videoCount} Videos
-          </div>
+  <div className="estimate-videos">
+    {videoCount} Videos
+  </div>
 
-          <div className="estimate-price">
-             Starts from ₹1,500
-          </div>
+  <div className="estimate-starting">
+    Starts from ₹1,500
+  </div>
 
-         <p>
-            Pricing varies based on your content requirements
-         </p>
+  <div className="estimate-price">
+    ₹{totalPrice.toLocaleString("en-IN")}
+  </div>
 
-          <div className="estimate-line"></div>
+  <p>
+    Estimated monthly investment
+  </p>
 
-          <small>
-            ₹{pricePerVideo.toLocaleString("en-IN")} per video
-          </small>
+  <div className="estimate-line"></div>
 
-        </aside>
+  <small>
+    ₹{pricePerVideo.toLocaleString("en-IN")} per video
+  </small>
+
+</aside>
 
       </div>
 
