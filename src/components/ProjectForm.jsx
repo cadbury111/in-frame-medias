@@ -36,7 +36,7 @@ WhatsApp / Phone: ${formData.phone}
 
 Content Type: ${formData.contentType}
 Videos per Month: ${videoCount}
-Estimated Price: ₹${totalPrice.toLocaleString("en-IN")}
+Starting Price: ₹1,500
 
 Preferred Start Date: ${formData.startDate || "Not specified"}
 
@@ -189,12 +189,12 @@ ${formData.message}
           </div>
 
           <div className="estimate-price">
-            ₹{totalPrice.toLocaleString("en-IN")}
+             Starts from ₹1,500
           </div>
 
-          <p>
-            Estimated monthly investment
-          </p>
+         <p>
+            Pricing varies based on your content requirements
+         </p>
 
           <div className="estimate-line"></div>
 
