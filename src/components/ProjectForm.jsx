@@ -206,18 +206,8 @@ ${formData.message}
 <small>
   Starting at ₹1,500 per video
 </small>
-
-  <p>
-    Estimated monthly investment
-  </p>
-
-  <div className="estimate-line"></div>
-
-  <small>
-    ₹{pricePerVideo.toLocaleString("en-IN")} per video
-  </small>
-
 </aside>
+
 
       </div>
 
