@@ -8,7 +8,7 @@ const Footer = () => {
 
   const openWhatsApp = () => {
     window.open(
-      "https://wa.me/917395877142",
+      "https://wa.me/919344026620",
       "_blank"
     );
   };
@@ -44,7 +44,7 @@ const Footer = () => {
             Instagram ↗
           </button>
 
-          <a href="mailto:ccadbury470@gmail.com">
+          <a href="mailto:inframemedias@gmail.com">
             Email ↗
           </a>
 

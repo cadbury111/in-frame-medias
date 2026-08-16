@@ -11,11 +11,6 @@ function Clients() {
       link: "https://www.instagram.com/pkn_tourz/",
     },
     {
-      name: "TEEBUY",
-      image: "/images/client-03.png",
-      link: "https://www.instagram.com/teebuy_e_store/",
-    },
-    {
       name: "ORCHID NATURES",
       image: "/images/client-04.png",
       link: "https://www.instagram.com/orchid_natures/",
@@ -23,12 +18,7 @@ function Clients() {
     {
       name: "Samosasnsalads",
       image: "/images/client-05.png",
-      link: null,
-    },
-    {
-      name: "AS GOAT FARMS",
-      image: "/images/client-06.png",
-      link: null,
+      link: "https://www.instagram.com/samosas_n_salads?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
     {
       name: "THE URBAN STOCK",
@@ -40,6 +30,11 @@ function Clients() {
       image: "/images/client-08.png",
       link: "https://www.instagram.com/vini_siva/",
     },
+    {
+      name: "SPICY SPOON",
+      image: "/images/client-09.png",
+      link: "https://www.instagram.com/spicyspoon_restaurant?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    },
   ];
 
   return (
@@ -47,7 +42,7 @@ function Clients() {
 
       <div className="clients-header">
         <span>HAPPY CLIENTS</span>
-        <span>08</span>
+        <span>07</span>
       </div>
 
       <div className="clients-intro">

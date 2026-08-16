@@ -3,30 +3,30 @@ function Portfolio() {
     {
       id: "01",
       title: "Client Work 01",
-      category: "REELS",
+      category: "PERSONAL BRAND",
       image: "/images/client-01.jpg",
-      link: "https://www.instagram.com/reel/DTcqb0Ak5tf/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      link: "https://www.instagram.com/reel/DaaRgz1ufSv/?igsh=YmVlZ2Z3ZG94bG1u",
     },
     {
       id: "02",
       title: "Client Work 02",
       category: "REELS",
       image: "/images/client-02.jpg",
-      link: "https://www.instagram.com/reel/DVc5MdnkUw8/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      link: "https://www.instagram.com/reel/DXZMeEPCegb/?igsh=MTh1bjB0ZDV1bmVzMw==",
     },
     {
       id: "03",
       title: "Client Work 03",
-      category: "PERSONAL BRAND",
+      category: "REELS",
       image: "/images/client-03.jpg",
-      link: "https://www.instagram.com/reel/DV0uPbRASHF/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      link: "https://www.instagram.com/reel/DbvTgOvh7PN/?igsh=b3ZtZXY4bHV2dDN6",
     },
     {
       id: "04",
       title: "Client Work 04",
       category: "BRAND",
       image: "/images/client-04.jpg",
-      link: "https://www.instagram.com/reel/DTaPLnYk9DQ/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      link: "https://www.instagram.com/reel/Da5OC7vv4_S/?igsh=MnRsZTExMDVjOXFz",
     },
   ];
 
