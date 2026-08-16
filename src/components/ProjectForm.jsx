@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./ProjectForm.css";
 
 const ProjectForm = ({ videoCount = 10 }) => {
-  const pricePerVideo = 1500;
+  const pricePerVideo = 2500;
   const totalPrice = videoCount * pricePerVideo;
 
   const [formData, setFormData] = useState({
@@ -37,7 +37,7 @@ WhatsApp / Phone: ${formData.phone}
 
 Content Type: ${formData.contentType}
 Videos per Month: ${videoCount}
-Starting Price: ₹1,500
+Starting Price: ₹2,500
 
 Preferred Start Date: ${
       formData.startDate || "Not specified"
@@ -47,7 +47,7 @@ Project Details:
 ${formData.message}
     `;
 
-    const whatsappNumber = "917395877142";
+    const whatsappNumber = "919344026620";
 
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       message
@@ -224,7 +224,7 @@ ${formData.message}
 
             <span>
               Starting from{" "}
-              <strong>₹1,500</strong>{" "}
+              <strong>₹2,500</strong>{" "}
               per video
             </span>
 

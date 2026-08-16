@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Packages = ({ onRequest }) => {
-  const pricePerVideo = 1500;
+  const pricePerVideo = 2500;
 
   const [videoCount, setVideoCount] = useState(10);
 
