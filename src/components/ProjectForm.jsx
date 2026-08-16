@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ProjectForm.css";
 
 const ProjectForm = ({ videoCount = 10 }) => {
   const pricePerVideo = 1500;
@@ -24,9 +25,9 @@ const ProjectForm = ({ videoCount = 10 }) => {
   };
 
   const handleSubmit = (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  const message = `
+    const message = `
 NEW PROJECT REQUEST
 
 Name: ${formData.name}
@@ -38,20 +39,22 @@ Content Type: ${formData.contentType}
 Videos per Month: ${videoCount}
 Starting Price: ₹1,500
 
-Preferred Start Date: ${formData.startDate || "Not specified"}
+Preferred Start Date: ${
+      formData.startDate || "Not specified"
+    }
 
 Project Details:
 ${formData.message}
-  `;
+    `;
 
-  const whatsappNumber = "917395877142";
+    const whatsappNumber = "917395877142";
 
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      message
+    )}`;
 
-  window.location.href = whatsappUrl;
-};
+    window.location.href = whatsappUrl;
+  };
 
   return (
     <section className="project-form" id="contact">
@@ -80,6 +83,7 @@ ${formData.message}
 
           <div className="form-field">
             <label>Your Name</label>
+
             <input
               type="text"
               name="name"
@@ -92,6 +96,7 @@ ${formData.message}
 
           <div className="form-field">
             <label>Brand / Company</label>
+
             <input
               type="text"
               name="company"
@@ -106,6 +111,7 @@ ${formData.message}
 
             <div className="form-field">
               <label>Email</label>
+
               <input
                 type="email"
                 name="email"
@@ -118,6 +124,7 @@ ${formData.message}
 
             <div className="form-field">
               <label>WhatsApp / Phone</label>
+
               <input
                 type="tel"
                 name="phone"
@@ -180,30 +187,62 @@ ${formData.message}
 
         </form>
 
+
+        {/* ================================
+            PREMIUM ESTIMATE
+        ================================= */}
+
         <aside className="project-estimate">
 
-  <span>YOUR ESTIMATE</span>
+          <span className="estimate-label">
+            YOUR ESTIMATE
+          </span>
 
-  <div className="estimate-videos">
-    {videoCount} Videos
-  </div>
+          <div className="estimate-videos">
+            {videoCount} Videos
+          </div>
 
-  <div className="estimate-price">
-    ₹{totalPrice.toLocaleString("en-IN")}
-  </div>
+          <div className="estimate-price">
+            ₹{totalPrice.toLocaleString("en-IN")}
+          </div>
 
-  <p>
-    Estimated monthly investment
-  </p>
+          <p className="estimate-description">
+            Estimated monthly investment
+          </p>
 
-  <div className="estimate-line"></div>
+          <div className="estimate-line">
+            <span className="estimate-line-dot left"></span>
+            <span className="estimate-line-glow"></span>
+            <span className="estimate-line-dot right"></span>
+          </div>
 
-  <small>
-    ₹{pricePerVideo.toLocaleString("en-IN")} per video
-  </small>
+          <div className="estimate-starting">
 
-</aside>
+            <span className="estimate-star">
+              ✦
+            </span>
 
+            <span>
+              Starting from{" "}
+              <strong>₹1,500</strong>{" "}
+              per video
+            </span>
+
+          </div>
+
+          <div className="estimate-disclaimer">
+
+            <span className="estimate-info">
+              i
+            </span>
+
+            <span>
+              Final pricing may vary based on your requirements.
+            </span>
+
+          </div>
+
+        </aside>
 
       </div>
 

@@ -254,3 +254,531 @@
   line-height: 1;
   margin: 10px 0 15px;
 }
+/* =========================================
+   PREMIUM ESTIMATE SECTION
+========================================= */
+
+.project-estimate {
+  position: relative;
+  padding: 10px 0 40px;
+  color: #ffffff;
+}
+
+/* YOUR ESTIMATE */
+
+.estimate-label {
+  display: block;
+  margin-bottom: 42px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+/* VIDEO COUNT */
+
+.estimate-videos {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #d0d0d0;
+}
+
+/* BIG PRICE */
+
+.estimate-price {
+  margin: 0;
+  font-size: clamp(72px, 7vw, 118px);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -5px;
+  color: #f5f5f5;
+}
+
+/* DESCRIPTION */
+
+.estimate-description {
+  margin: 30px 0 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: #777777;
+}
+
+/* GOLD DIVIDER */
+
+.estimate-line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  margin: 58px 0 42px;
+
+  background: linear-gradient(
+    90deg,
+    #b88720 0%,
+    #d6a83d 35%,
+    #fff1a8 50%,
+    #d6a83d 65%,
+    #b88720 100%
+  );
+
+  box-shadow:
+    0 0 6px rgba(214, 168, 61, 0.45),
+    0 0 18px rgba(214, 168, 61, 0.18);
+}
+
+/* GOLD DOTS ON BOTH SIDES */
+
+.estimate-line::before,
+.estimate-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+  background: #e4b33f;
+
+  box-shadow:
+    0 0 8px rgba(228, 179, 63, 0.8),
+    0 0 16px rgba(228, 179, 63, 0.35);
+}
+
+.estimate-line::before {
+  left: 0;
+}
+
+.estimate-line::after {
+  right: 0;
+}
+
+/* STARTING PRICE */
+
+.estimate-starting {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin: 0 0 32px;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: #f3f3f3;
+}
+
+.estimate-starting strong {
+  color: #e3ad35;
+  font-weight: 700;
+}
+
+.estimate-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  font-size: 32px;
+  line-height: 1;
+
+  color: #f0b936;
+
+  text-shadow:
+    0 0 8px rgba(240, 185, 54, 0.7),
+    0 0 18px rgba(240, 185, 54, 0.35);
+}
+
+/* DISCLAIMER BOX */
+
+.estimate-disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 20px 24px;
+
+  border: 2px solid #9b721c;
+  border-left: 5px solid #f0b936;
+  border-radius: 8px;
+
+  background: rgba(214, 168, 61, 0.025);
+
+  color: #e5b63f;
+
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  box-shadow:
+    0 0 8px rgba(214, 168, 61, 0.35),
+    0 0 22px rgba(214, 168, 61, 0.12),
+    inset 0 0 18px rgba(214, 168, 61, 0.025);
+}
+
+/* INFO ICON */
+
+.estimate-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border: 2px solid #e3ad35;
+  border-radius: 50%;
+
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #e3ad35;
+
+  box-shadow:
+    0 0 8px rgba(227, 173, 53, 0.35);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .project-estimate {
+    padding: 20px 0 30px;
+  }
+
+  .estimate-label {
+    margin-bottom: 28px;
+    font-size: 10px;
+  }
+
+  .estimate-videos {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .estimate-price {
+    font-size: clamp(58px, 17vw, 82px);
+    letter-spacing: -3px;
+  }
+
+  .estimate-description {
+    margin-top: 22px;
+    font-size: 14px;
+  }
+
+  .estimate-line {
+    margin: 40px 0 30px;
+  }
+
+  .estimate-line::before,
+  .estimate-line::after {
+    width: 10px;
+    height: 10px;
+  }
+
+  .estimate-starting {
+    gap: 14px;
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+
+  .estimate-star {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+  }
+
+  .estimate-disclaimer {
+    gap: 12px;
+    padding: 14px 16px;
+    font-size: 12px;
+    border-left-width: 4px;
+  }
+
+  .estimate-info {
+    width: 27px;
+    height: 27px;
+    font-size: 16px;
+  }
+}
+/* =========================================
+   FINAL PREMIUM ESTIMATE - MOBILE FIX
+========================================= */
+
+.project-estimate .estimate-starting {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin: 0 0 28px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  color: #f5f5f5 !important;
+}
+
+.project-estimate .estimate-star {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 28px !important;
+  height: 28px !important;
+
+  flex-shrink: 0 !important;
+
+  font-size: 24px !important;
+  color: #e3ad35 !important;
+
+  text-shadow:
+    0 0 8px rgba(227, 173, 53, 0.7),
+    0 0 16px rgba(227, 173, 53, 0.3) !important;
+}
+
+.project-estimate .estimate-starting strong {
+  color: #e3ad35 !important;
+  font-weight: 700 !important;
+}
+
+
+/* DISCLAIMER BOX */
+
+.project-estimate .estimate-disclaimer {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+
+  width: 100% !important;
+  box-sizing: border-box !important;
+
+  padding: 14px 15px !important;
+
+  margin: 0 !important;
+
+  border: 1px solid #9b721c !important;
+  border-left: 4px solid #e3ad35 !important;
+  border-radius: 6px !important;
+
+  background: rgba(214, 168, 61, 0.04) !important;
+
+  color: #d6a83d !important;
+
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+
+  box-shadow:
+    0 0 10px rgba(214, 168, 61, 0.18) !important;
+}
+
+
+/* INFO ICON */
+
+.project-estimate .estimate-info {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 26px !important;
+  height: 26px !important;
+
+  flex-shrink: 0 !important;
+
+  border: 2px solid #e3ad35 !important;
+  border-radius: 50% !important;
+
+  font-family: Arial, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+
+  color: #e3ad35 !important;
+
+  box-shadow:
+    0 0 8px rgba(227, 173, 53, 0.35) !important;
+}
+
+
+/* GOLD DIVIDER */
+
+.project-estimate .estimate-line {
+  height: 2px !important;
+
+  margin: 38px 0 28px !important;
+
+  background: linear-gradient(
+    90deg,
+    #b88720 0%,
+    #d6a83d 35%,
+    #fff1a8 50%,
+    #d6a83d 65%,
+    #b88720 100%
+  ) !important;
+
+  box-shadow:
+    0 0 8px rgba(214, 168, 61, 0.45) !important;
+}
+/* ===== FINAL ESTIMATE DESIGN ===== */
+
+.project-estimate .estimate-starting {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin: 32px 0 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  color: #f5f5f5 !important;
+}
+
+.project-estimate .estimate-star {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 34px !important;
+  height: 34px !important;
+
+  flex-shrink: 0 !important;
+
+  font-size: 28px !important;
+  color: #f0b936 !important;
+
+  text-shadow:
+    0 0 8px rgba(240, 185, 54, 0.8),
+    0 0 18px rgba(240, 185, 54, 0.4) !important;
+}
+
+.project-estimate .estimate-starting strong {
+  color: #f0b936 !important;
+  font-weight: 700 !important;
+}
+
+
+/* ===== DISCLAIMER BOX ===== */
+
+.project-estimate .estimate-disclaimer {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+
+  width: 100% !important;
+  box-sizing: border-box !important;
+
+  margin: 0 !important;
+  padding: 18px 20px !important;
+
+  border: 2px solid #a77b20 !important;
+  border-left: 5px solid #f0b936 !important;
+  border-radius: 8px !important;
+
+  background: rgba(240, 185, 54, 0.04) !important;
+
+  color: #f0b936 !important;
+
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+
+  box-shadow:
+    0 0 8px rgba(240, 185, 54, 0.35),
+    0 0 20px rgba(240, 185, 54, 0.12) !important;
+}
+
+
+/* ===== INFO ICON ===== */
+
+.project-estimate .estimate-info {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 30px !important;
+  height: 30px !important;
+
+  flex-shrink: 0 !important;
+
+  border: 2px solid #f0b936 !important;
+  border-radius: 50% !important;
+
+  color: #f0b936 !important;
+
+  font-family: Arial, sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+
+  box-shadow:
+    0 0 8px rgba(240, 185, 54, 0.4) !important;
+}
+
+
+/* ===== GOLD DIVIDER ===== */
+
+.project-estimate .estimate-line {
+  position: relative !important;
+
+  width: 100% !important;
+  height: 2px !important;
+
+  margin: 38px 0 30px !important;
+
+  background: linear-gradient(
+    90deg,
+    #b88720 0%,
+    #d6a83d 35%,
+    #fff1a8 50%,
+    #d6a83d 65%,
+    #b88720 100%
+  ) !important;
+
+  box-shadow:
+    0 0 8px rgba(214, 168, 61, 0.6),
+    0 0 20px rgba(214, 168, 61, 0.2) !important;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .project-estimate .estimate-starting {
+    gap: 12px !important;
+    margin: 28px 0 22px !important;
+    font-size: 15px !important;
+  }
+
+  .project-estimate .estimate-star {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 23px !important;
+  }
+
+  .project-estimate .estimate-disclaimer {
+    gap: 12px !important;
+    padding: 14px 15px !important;
+    font-size: 12px !important;
+    border-left-width: 4px !important;
+  }
+
+  .project-estimate .estimate-info {
+    width: 26px !important;
+    height: 26px !important;
+    font-size: 15px !important;
+  }
+
+  .project-estimate .estimate-line {
+    margin: 32px 0 24px !important;
+  }
+}

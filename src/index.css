@@ -2233,3 +2233,36 @@ html {
   }
 
 }
+.estimate-pricing-note {
+  display: block;
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #d6b36a;
+  letter-spacing: 0.3px;
+}
+
+.estimate-pricing-disclaimer {
+  display: block;
+  margin-top: 14px;
+  padding: 12px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #d6b36a;
+  background: rgba(214, 179, 106, 0.04);
+  border: 1px solid rgba(214, 179, 106, 0.45);
+  border-left: 3px solid #d6b36a;
+  border-radius: 4px;
+  line-height: 1.5;
+  box-shadow: 0 0 18px rgba(214, 179, 106, 0.08);
+}
+.estimate-line {
+  height: 1px;
+  width: 100%;
+  margin: 24px 0 0;
+  background: linear-gradient(
+    to right,
+    rgba(214, 179, 106, 0.45),
+    rgba(214, 179, 106, 0.08)
+  );
+}

@@ -42,6 +42,7 @@ const Packages = ({ onRequest }) => {
       <div className="package-calculator">
 
         <div className="calculator-left">
+
           <span className="calculator-label">
             VIDEOS / MONTH
           </span>
@@ -61,8 +62,9 @@ const Packages = ({ onRequest }) => {
           </div>
 
           <p>
-            ₹{pricePerVideo.toLocaleString("en-IN")} per video
+            Starting from ₹{pricePerVideo.toLocaleString("en-IN")} per video
           </p>
+
         </div>
 
         <div className="calculator-right">
@@ -75,18 +77,18 @@ const Packages = ({ onRequest }) => {
             ₹{totalPrice.toLocaleString("en-IN")}
           </h3>
 
-        <button
+          <button
             className="package-button"
-             onClick={() => {
-            onRequest(videoCount);
+            onClick={() => {
+              onRequest(videoCount);
 
-             document.getElementById("contact")?.scrollIntoView({
-              behavior: "smooth",
-            });
-         }}
-        >
-         REQUEST THIS PACKAGE ↗
-        </button>
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            REQUEST THIS PACKAGE ↗
+          </button>
 
         </div>
 
