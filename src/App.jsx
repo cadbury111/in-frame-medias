@@ -8,21 +8,32 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Manifesto from "./components/Manifesto";
 import Packages from "./components/Packages";
+import ReelLab from "./components/ReelLab";
 
 function App() {
   const [selectedVideos, setSelectedVideos] = useState(10);
+
   return (
     <>
       <Navbar />
 
       <main>
         <Hero />
+
         <Services />
+
         <Portfolio />
+
+        <ReelLab />
+
         <Manifesto />
+
         <Packages onRequest={setSelectedVideos} />
+
         <Clients />
+
         <ProjectForm videoCount={selectedVideos} />
+
         <Footer />
       </main>
     </>

@@ -1,0 +1,472 @@
+/* =========================================
+   REELLAB — PREMIUM COURSE SECTION
+========================================= */
+
+.reellab {
+  position: relative;
+  width: 100%;
+  padding: 130px 6vw;
+  background: #0b0b0b;
+  color: #f5f5f5;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Subtle background glow */
+
+.reellab::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+
+  top: 10%;
+  right: -180px;
+
+  background: rgba(212, 166, 55, 0.08);
+
+  filter: blur(120px);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.reellab-header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.reellab-label {
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  color: #888;
+
+  text-transform: uppercase;
+}
+
+.reellab-number {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #777;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.reellab-content {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 0.95fr 1fr;
+
+  gap: 9vw;
+
+  align-items: center;
+
+  padding-top: 85px;
+}
+
+
+/* =========================================
+   REELLAB TITLE
+========================================= */
+
+.reellab-title {
+  display: flex;
+
+  align-items: center;
+}
+
+.reellab-title h2 {
+  margin: 0;
+
+  /*
+    Smaller than previous version.
+    Keeps the title strong without
+    overpowering the course details.
+  */
+
+  font-size: clamp(80px, 10.5vw, 165px);
+
+  line-height: 0.78;
+
+  font-weight: 400;
+
+  letter-spacing: -6px;
+
+  color: #f5f5f5;
+}
+
+.reellab-title h2 em {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-weight: 400;
+
+  color: #f5f5f5;
+}
+
+
+/* =========================================
+   COURSE DETAILS
+========================================= */
+
+.reellab-details {
+  max-width: 540px;
+}
+
+.reellab-course-label {
+  display: inline-block;
+
+  margin-bottom: 22px;
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  color: #d8a928;
+
+  text-transform: uppercase;
+}
+
+.reellab-details h3 {
+  margin: 0 0 20px;
+
+  font-size: clamp(30px, 4vw, 52px);
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: -1.5px;
+}
+
+.reellab-details p {
+  max-width: 500px;
+
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color: #858585;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.reellab-features {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 35px;
+}
+
+.reellab-features span {
+  padding: 10px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  border-radius: 100px;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+
+  color: #aaa;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   PRICE + BUTTON
+========================================= */
+
+.reellab-bottom {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 60px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+/* Price */
+
+.reellab-price {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.reellab-price small {
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #777;
+
+  text-transform: uppercase;
+}
+
+.reellab-price strong {
+  font-size: 42px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  color: #f5f5f5;
+}
+
+
+/* =========================================
+   ENROLL BUTTON
+========================================= */
+
+.reellab-enroll {
+  padding: 17px 28px;
+
+  border: 1px solid #d8a928;
+
+  background: transparent;
+
+  color: #f5f5f5;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.reellab-enroll:hover {
+  background: #d8a928;
+
+  color: #080808;
+
+  box-shadow: 0 0 25px rgba(216, 169, 40, 0.3);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   GOLD ACCENT LINE
+========================================= */
+
+.reellab::after {
+  content: "";
+
+  position: absolute;
+
+  left: 6vw;
+
+  right: 6vw;
+
+  bottom: 45px;
+
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(216, 169, 40, 0.8),
+    transparent
+  );
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .reellab {
+    padding: 100px 6vw;
+  }
+
+  .reellab-content {
+    grid-template-columns: 1fr;
+
+    gap: 65px;
+
+    padding-top: 70px;
+  }
+
+  .reellab-title h2 {
+    font-size: clamp(85px, 18vw, 150px);
+
+    letter-spacing: -5px;
+  }
+
+  .reellab-details {
+    max-width: 650px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .reellab {
+    padding: 80px 24px;
+  }
+
+  .reellab-header {
+    padding-bottom: 16px;
+  }
+
+  .reellab-label {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+
+  .reellab-number {
+    font-size: 9px;
+  }
+
+  .reellab-content {
+    padding-top: 55px;
+
+    gap: 50px;
+  }
+
+  /*
+    Mobile title is also slightly
+    smaller so it doesn't dominate.
+  */
+
+  .reellab-title h2 {
+    font-size: 78px;
+
+    line-height: 0.8;
+
+    letter-spacing: -4px;
+  }
+
+  .reellab-details h3 {
+    font-size: 34px;
+  }
+
+  .reellab-details p {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .reellab-features {
+    gap: 7px;
+
+    margin-top: 28px;
+  }
+
+  .reellab-features span {
+    padding: 8px 11px;
+
+    font-size: 8px;
+  }
+
+  .reellab-bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    margin-top: 45px;
+
+    gap: 30px;
+  }
+
+  .reellab-price strong {
+    font-size: 36px;
+  }
+
+  .reellab-enroll {
+    width: 100%;
+
+    padding: 16px 20px;
+  }
+
+  .reellab::after {
+    left: 24px;
+
+    right: 24px;
+
+    bottom: 25px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .reellab {
+    padding: 70px 20px;
+  }
+
+  .reellab-title h2 {
+    font-size: 68px;
+
+    letter-spacing: -3px;
+  }
+
+  .reellab-details h3 {
+    font-size: 30px;
+  }
+
+  .reellab-price strong {
+    font-size: 32px;
+  }
+}
