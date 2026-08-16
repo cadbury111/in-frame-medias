@@ -782,3 +782,1030 @@
     margin: 32px 0 24px !important;
   }
 }
+/* =========================================
+   PORTFOLIO VIDEO MODAL
+========================================= */
+
+.portfolio-link {
+  cursor: pointer;
+}
+
+.portfolio-video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.88);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.portfolio-video-container {
+  position: relative;
+
+  width: min(900px, 100%);
+  max-height: 90vh;
+
+  background: #0b0b0b;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+    0 30px 100px rgba(0, 0, 0, 0.8);
+
+  overflow: hidden;
+}
+
+
+/* VIDEO */
+
+.portfolio-video {
+  display: block;
+
+  width: 100%;
+  max-height: 75vh;
+
+  background: #000;
+
+  object-fit: contain;
+}
+
+
+/* CLOSE BUTTON */
+
+.portfolio-video-close {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  z-index: 10;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  color: #fff;
+
+  font-size: 28px;
+  font-weight: 300;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.portfolio-video-close:hover {
+  background: #ff2692;
+
+  border-color: #ff2692;
+
+  transform: rotate(90deg);
+}
+
+
+/* VIDEO INFO */
+
+.portfolio-video-info {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 24px;
+
+  background: #0b0b0b;
+}
+
+.portfolio-video-info h3 {
+  margin: 0 0 6px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #fff;
+}
+
+.portfolio-video-info span {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #777;
+}
+
+.portfolio-video-number {
+  font-size: 13px !important;
+
+  color: #777 !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .portfolio-video-modal {
+    padding: 15px;
+  }
+
+  .portfolio-video-container {
+    width: 100%;
+    max-height: 90vh;
+  }
+
+  .portfolio-video {
+    max-height: 75vh;
+  }
+
+  .portfolio-video-close {
+    top: 10px;
+    right: 10px;
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 24px;
+  }
+
+  .portfolio-video-info {
+    padding: 15px;
+  }
+
+  .portfolio-video-info h3 {
+    font-size: 15px;
+  }
+
+}
+/* =========================================
+   PREMIUM REEL MODAL
+========================================= */
+
+.reel-modal {
+  position: fixed !important;
+  inset: 0 !important;
+
+  z-index: 999999 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 20px !important;
+
+  background: rgba(0, 0, 0, 0.78) !important;
+
+  backdrop-filter: blur(22px) !important;
+  -webkit-backdrop-filter: blur(22px) !important;
+}
+
+
+/* VIDEO BOX */
+
+.reel-modal-box {
+  position: relative !important;
+
+  width: 380px !important;
+  max-width: 88vw !important;
+
+  max-height: 88vh !important;
+
+  background: #050505 !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+
+  border-radius: 10px !important;
+
+  overflow: hidden !important;
+
+  box-shadow:
+    0 30px 100px rgba(0, 0, 0, 0.95) !important;
+}
+
+
+/* VIDEO */
+
+.reel-video {
+  display: block !important;
+
+  width: 100% !important;
+
+  height: auto !important;
+
+  max-height: 76vh !important;
+
+  object-fit: contain !important;
+
+  background: #000 !important;
+}
+
+
+/* CLOSE */
+
+.reel-close {
+  position: absolute !important;
+
+  top: 10px !important;
+  right: 10px !important;
+
+  z-index: 10 !important;
+
+  width: 38px !important;
+  height: 38px !important;
+
+  padding: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+
+  border-radius: 50% !important;
+
+  background: rgba(0, 0, 0, 0.7) !important;
+
+  color: #fff !important;
+
+  font-size: 26px !important;
+
+  cursor: pointer !important;
+}
+
+
+/* CLOSE HOVER */
+
+.reel-close:hover {
+  background: #ff2692 !important;
+  border-color: #ff2692 !important;
+}
+
+
+/* INFO */
+
+.reel-info {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 14px 18px !important;
+
+  background: #080808 !important;
+}
+
+
+.reel-info h3 {
+  margin: 0 0 4px !important;
+
+  color: #fff !important;
+
+  font-size: 15px !important;
+
+  font-weight: 500 !important;
+}
+
+
+.reel-info span {
+  color: #777 !important;
+
+  font-size: 9px !important;
+
+  letter-spacing: 1.5px !important;
+}
+
+
+.reel-number {
+  color: #777 !important;
+
+  font-size: 11px !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .reel-modal {
+    padding: 15px !important;
+  }
+
+  .reel-modal-box {
+    width: 350px !important;
+
+    max-width: 88vw !important;
+  }
+
+  .reel-video {
+    max-height: 74vh !important;
+  }
+
+}
+/* =========================================
+   PORTFOLIO CLICK FIX
+========================================= */
+
+.portfolio-card {
+  position: relative;
+  z-index: 5;
+}
+
+.portfolio-link {
+  position: relative;
+  z-index: 10;
+
+  display: block;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+  background: transparent;
+
+  color: inherit;
+  text-align: left;
+
+  cursor: pointer;
+
+  pointer-events: auto !important;
+}
+
+
+/* Make sure portfolio content receives clicks */
+
+.portfolio-media,
+.portfolio-info {
+  pointer-events: none;
+}
+
+
+/* =========================================
+   REEL MODAL
+========================================= */
+
+.reel-modal {
+  position: fixed !important;
+  inset: 0 !important;
+
+  z-index: 999999 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 20px !important;
+
+  background: rgba(0, 0, 0, 0.78) !important;
+
+  backdrop-filter: blur(22px) !important;
+  -webkit-backdrop-filter: blur(22px) !important;
+
+  cursor: default !important;
+}
+
+
+.reel-modal-box {
+  position: relative !important;
+
+  width: 360px !important;
+  max-width: 88vw !important;
+
+  max-height: 88vh !important;
+
+  overflow: hidden !important;
+
+  background: #050505 !important;
+
+  border: 1px solid rgba(255,255,255,0.15) !important;
+
+  border-radius: 10px !important;
+
+  box-shadow:
+    0 30px 100px rgba(0,0,0,0.9) !important;
+}
+
+
+.reel-video {
+  display: block !important;
+
+  width: 100% !important;
+
+  max-height: 75vh !important;
+
+  height: auto !important;
+
+  object-fit: contain !important;
+
+  background: #000 !important;
+}
+
+
+.reel-close {
+  position: absolute !important;
+
+  top: 10px !important;
+  right: 10px !important;
+
+  z-index: 20 !important;
+
+  width: 38px !important;
+  height: 38px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 0 !important;
+
+  border: 1px solid rgba(255,255,255,0.3) !important;
+
+  border-radius: 50% !important;
+
+  background: rgba(0,0,0,0.7) !important;
+
+  color: #fff !important;
+
+  font-size: 26px !important;
+
+  cursor: pointer !important;
+}
+
+
+.reel-close:hover {
+  background: #ff2692 !important;
+}
+
+
+.reel-info {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 14px 18px !important;
+
+  background: #080808 !important;
+}
+
+
+.reel-info h3 {
+  margin: 0 0 4px !important;
+
+  color: #fff !important;
+
+  font-size: 15px !important;
+}
+
+
+.reel-info span {
+  color: #777 !important;
+
+  font-size: 9px !important;
+
+  letter-spacing: 1.5px !important;
+}
+
+
+@media (max-width: 768px) {
+
+  .reel-modal-box {
+    width: 340px !important;
+    max-width: 88vw !important;
+  }
+
+  .reel-video {
+    max-height: 73vh !important;
+  }
+
+}
+/* =========================================
+   PORTFOLIO CARD - RESTORE ORIGINAL STYLE
+========================================= */
+
+.portfolio-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+/* BUTTON SHOULD LOOK LIKE ORIGINAL CARD */
+
+.portfolio-link {
+  display: block !important;
+
+  width: 100% !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background: transparent !important;
+
+  border: none !important;
+  outline: none !important;
+
+  color: inherit !important;
+
+  text-align: left !important;
+
+  font: inherit !important;
+
+  cursor: pointer !important;
+
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+
+/* REMOVE BUTTON DEFAULT EFFECT */
+
+.portfolio-link:hover,
+.portfolio-link:focus,
+.portfolio-link:active {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+/* IMAGE */
+
+.portfolio-media {
+  position: relative !important;
+
+  width: 100% !important;
+
+  overflow: hidden !important;
+
+  background: #111 !important;
+}
+
+
+.portfolio-media img {
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+
+  object-fit: cover !important;
+}
+
+
+/* ORIGINAL DARK INFO AREA */
+
+.portfolio-info {
+  width: 100% !important;
+
+  padding: 20px 0 0 !important;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+}
+
+
+/* TITLE */
+
+.portfolio-info h3 {
+  margin: 0 0 12px !important;
+
+  color: #ffffff !important;
+
+  font-size: 18px !important;
+
+  font-weight: 500 !important;
+}
+
+
+/* META */
+
+.portfolio-meta {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  width: 100% !important;
+}
+
+
+.portfolio-meta > span {
+  color: #777 !important;
+
+  font-size: 11px !important;
+
+  letter-spacing: 1.5px !important;
+}
+
+
+/* VIEW PROJECT */
+
+.portfolio-view {
+  white-space: nowrap !important;
+
+  color: #888 !important;
+}
+
+
+/* PINK ACCENT */
+
+.portfolio-link:hover .portfolio-view {
+  color: #ff2692 !important;
+}
+
+
+/* IMAGE OVERLAY */
+
+.portfolio-overlay {
+  pointer-events: none !important;
+}
+
+
+/* ARROW */
+
+.project-arrow {
+  pointer-events: none !important;
+}
+
+
+/* NUMBER */
+
+.project-number {
+  pointer-events: none !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .portfolio-info {
+    padding-top: 14px !important;
+  }
+
+  .portfolio-info h3 {
+    font-size: 16px !important;
+  }
+
+  .portfolio-meta > span {
+    font-size: 9px !important;
+  }
+
+}
+/* =========================================
+   CENTER REEL VIDEO MODAL
+========================================= */
+
+.reel-modal {
+  position: fixed !important;
+  inset: 0 !important;
+
+  z-index: 999999 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 20px !important;
+  box-sizing: border-box !important;
+
+  /* website background visible + blurred */
+  background: rgba(0, 0, 0, 0.72) !important;
+
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+}
+
+
+/* =========================================
+   VIDEO BOX
+========================================= */
+
+.reel-modal-box {
+  position: relative !important;
+
+  width: 360px !important;
+  max-width: 88vw !important;
+
+  max-height: 88vh !important;
+
+  overflow: hidden !important;
+
+  background: #050505 !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+
+  border-radius: 10px !important;
+
+  box-shadow:
+    0 30px 100px rgba(0, 0, 0, 0.9),
+    0 0 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.reel-video {
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+
+  max-height: 76vh !important;
+
+  object-fit: contain !important;
+
+  background: #000 !important;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.reel-close {
+  position: absolute !important;
+
+  top: 10px !important;
+  right: 10px !important;
+
+  z-index: 10 !important;
+
+  width: 38px !important;
+  height: 38px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 0 !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+
+  border-radius: 50% !important;
+
+  background: rgba(0, 0, 0, 0.7) !important;
+
+  color: #fff !important;
+
+  font-size: 26px !important;
+
+  cursor: pointer !important;
+}
+
+
+.reel-close:hover {
+  background: #ff2692 !important;
+
+  border-color: #ff2692 !important;
+}
+
+
+/* =========================================
+   VIDEO INFO
+========================================= */
+
+.reel-info {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 13px 17px !important;
+
+  background: #080808 !important;
+}
+
+
+.reel-info h3 {
+  margin: 0 0 4px !important;
+
+  color: #fff !important;
+
+  font-size: 15px !important;
+
+  font-weight: 500 !important;
+}
+
+
+.reel-info span {
+  color: #777 !important;
+
+  font-size: 9px !important;
+
+  letter-spacing: 1.5px !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .reel-modal {
+    padding: 15px !important;
+  }
+
+  .reel-modal-box {
+    width: 350px !important;
+    max-width: 88vw !important;
+  }
+
+  .reel-video {
+    max-height: 74vh !important;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .reel-modal-box {
+    width: 320px !important;
+  }
+
+  .reel-video {
+    max-height: 72vh !important;
+  }
+
+}
+/* =========================================
+   PORTFOLIO VIDEO MODAL
+========================================= */
+
+.portfolio-reel-modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+
+  z-index: 999999 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 20px !important;
+  box-sizing: border-box !important;
+
+  background: rgba(0, 0, 0, 0.78) !important;
+
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+
+
+/* VIDEO CONTAINER */
+
+.portfolio-reel-box {
+  position: relative !important;
+
+  width: 360px !important;
+  max-width: 88vw !important;
+
+  max-height: 88vh !important;
+
+  overflow: hidden !important;
+
+  background: #050505 !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+
+  border-radius: 8px !important;
+
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.9) !important;
+}
+
+
+/* VIDEO */
+
+.portfolio-reel-video {
+  display: block !important;
+
+  width: 100% !important;
+
+  height: auto !important;
+
+  max-height: 76vh !important;
+
+  object-fit: contain !important;
+
+  background: #000 !important;
+}
+
+
+/* CLOSE */
+
+.portfolio-reel-close {
+  position: absolute !important;
+
+  top: 10px !important;
+  right: 10px !important;
+
+  z-index: 100 !important;
+
+  width: 38px !important;
+  height: 38px !important;
+
+  padding: 0 !important;
+
+  border: 1px solid rgba(255,255,255,0.3) !important;
+
+  border-radius: 50% !important;
+
+  background: rgba(0,0,0,0.75) !important;
+
+  color: white !important;
+
+  font-size: 26px !important;
+  line-height: 1 !important;
+
+  cursor: pointer !important;
+}
+
+.portfolio-reel-close:hover {
+  background: #ff2692 !important;
+  border-color: #ff2692 !important;
+}
+
+
+/* INFO */
+
+.portfolio-reel-info {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 14px 17px !important;
+
+  background: #080808 !important;
+
+  color: white !important;
+}
+
+.portfolio-reel-info h3 {
+  margin: 0 0 4px !important;
+
+  color: white !important;
+
+  font-size: 15px !important;
+}
+
+.portfolio-reel-info span {
+  color: #777 !important;
+
+  font-size: 9px !important;
+
+  letter-spacing: 1.5px !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .portfolio-reel-box {
+    width: 350px !important;
+    max-width: 88vw !important;
+  }
+
+  .portfolio-reel-video {
+    max-height: 74vh !important;
+  }
+}
