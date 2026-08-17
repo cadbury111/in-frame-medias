@@ -1,7 +1,7 @@
 import "./ReelLab.css";
  function ReelLab(){ 
   const handleEnroll = () => {
-    const whatsappNumber = "91934402662";
+    const whatsappNumber = "919344026620";
 
     const message = `Hi, I'm interested in the REELLAB — Beginner to Creator course.
 
