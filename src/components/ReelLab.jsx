@@ -12,6 +12,7 @@ function ReelLab() {
       title: "VIDEO EDITING",
       description:
         "Learn to create engaging social media videos from scratch.",
+
       topics: [
         "Introduction to video editing",
         "Editing app & interface",
@@ -33,6 +34,7 @@ function ReelLab() {
       title: "SOCIAL MEDIA MANAGEMENT",
       description:
         "Learn to manage and build a consistent social media presence.",
+
       topics: [
         "Introduction to SMM",
         "Personal branding fundamentals",
@@ -54,6 +56,7 @@ function ReelLab() {
       title: "CONTENT WRITING FOR PERSONAL BRANDING",
       description:
         "Learn to create content that communicates your ideas and builds your personal brand.",
+
       topics: [
         "Content writing fundamentals",
         "Finding your brand voice",
@@ -71,6 +74,28 @@ function ReelLab() {
     },
   ];
 
+  /* =========================================
+     OPEN COURSE LIST
+  ========================================= */
+
+  const handleEnterCourse = () => {
+    setShowCourses(true);
+
+    setTimeout(() => {
+      document
+        .getElementById("reellab-course-list")
+        ?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+    }, 100);
+  };
+
+
+  /* =========================================
+     WHATSAPP ENROLLMENT
+  ========================================= */
+
   const handleEnroll = (course) => {
     const message = `Hi, I'm interested in the REELLAB course.
 
@@ -79,35 +104,44 @@ Course Price: ₹3,000
 
 I would like to enroll in this course.`;
 
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+    const whatsappUrl =
+      `https://wa.me/${whatsappNumber}?text=` +
+      encodeURIComponent(message);
 
     window.open(whatsappUrl, "_blank");
   };
 
-  const handleEnterCourse = () => {
-    setShowCourses(true);
+
+  /* =========================================
+     BACK TO REELLAB
+  ========================================= */
+
+  const handleBack = () => {
+    setShowCourses(false);
 
     setTimeout(() => {
       document
-        .getElementById("reellab-courses")
+        .getElementById("courses")
         ?.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
-    }, 50);
+    }, 100);
   };
+
 
   return (
     <section className="reellab" id="courses">
 
-      {/* =====================================
-          MAIN REELLAB HERO
-      ===================================== */}
+      {/* ==================================================
+          FRONT / HERO SECTION
+      ================================================== */}
 
       {!showCourses && (
         <>
+
+          {/* HEADER */}
+
           <div className="reellab-header">
 
             <span className="reellab-label">
@@ -121,9 +155,11 @@ I would like to enroll in this course.`;
           </div>
 
 
+          {/* HERO CONTENT */}
+
           <div className="reellab-content">
 
-            {/* LEFT — REEL LAB */}
+            {/* LEFT */}
 
             <div className="reellab-title">
 
@@ -136,7 +172,7 @@ I would like to enroll in this course.`;
             </div>
 
 
-            {/* RIGHT — COURSE INTRO */}
+            {/* RIGHT */}
 
             <div className="reellab-details">
 
@@ -155,6 +191,8 @@ I would like to enroll in this course.`;
               </p>
 
 
+              {/* FEATURES */}
+
               <div className="reellab-features">
 
                 <span>
@@ -172,20 +210,9 @@ I would like to enroll in this course.`;
               </div>
 
 
+              {/* ENTER COURSE */}
+
               <div className="reellab-bottom">
-
-                <div className="reellab-price">
-
-                  <small>
-                    COURSE FEE
-                  </small>
-
-                  <strong>
-                    ₹3,000
-                  </strong>
-
-                </div>
-
 
                 <button
                   type="button"
@@ -200,33 +227,27 @@ I would like to enroll in this course.`;
             </div>
 
           </div>
+
         </>
       )}
 
 
-      {/* =====================================
-          COURSES SECTION
-      ===================================== */}
+      {/* ==================================================
+          COURSE PAGE
+      ================================================== */}
 
       {showCourses && (
-        <div
-          className="reellab-courses-page"
-          id="reellab-courses"
-        >
+
+        <div className="reellab-courses-page">
+
+          {/* TOP BAR */}
 
           <div className="reellab-courses-top">
 
             <button
               type="button"
               className="reellab-back"
-              onClick={() => {
-                setShowCourses(false);
-
-                window.scrollTo({
-                  top: document.getElementById("courses")?.offsetTop || 0,
-                  behavior: "smooth",
-                });
-              }}
+              onClick={handleBack}
             >
               ← BACK
             </button>
@@ -241,6 +262,8 @@ I would like to enroll in this course.`;
 
           </div>
 
+
+          {/* COURSE INTRO */}
 
           <div className="reellab-courses-intro">
 
@@ -262,7 +285,14 @@ I would like to enroll in this course.`;
           </div>
 
 
-          <div className="reellab-course-list">
+          {/* ==================================================
+              THREE COURSES
+          ================================================== */}
+
+          <div
+            className="reellab-course-list"
+            id="reellab-course-list"
+          >
 
             {courses.map((course) => (
 
@@ -271,7 +301,7 @@ I would like to enroll in this course.`;
                 key={course.id}
               >
 
-                {/* COURSE NUMBER */}
+                {/* COURSE TOP */}
 
                 <div className="reellab-course-top">
 
@@ -286,9 +316,11 @@ I would like to enroll in this course.`;
                 </div>
 
 
-                {/* COURSE INFORMATION */}
+                {/* COURSE BODY */}
 
                 <div className="reellab-course-body">
+
+                  {/* LEFT SIDE */}
 
                   <div className="reellab-course-info">
 
@@ -303,7 +335,7 @@ I would like to enroll in this course.`;
                   </div>
 
 
-                  {/* TOPICS */}
+                  {/* RIGHT SIDE — TOPICS */}
 
                   <div className="reellab-course-learning">
 
@@ -311,26 +343,32 @@ I would like to enroll in this course.`;
                       WHAT YOU'LL LEARN
                     </span>
 
+
                     <div className="reellab-topic-list">
 
-                      {course.topics.map((topic, index) => (
+                      {course.topics.map(
+                        (topic, index) => (
 
-                        <div
-                          className="reellab-topic"
-                          key={topic}
-                        >
+                          <div
+                            className="reellab-topic"
+                            key={topic}
+                          >
 
-                          <span>
-                            {String(index + 1).padStart(2, "0")}
-                          </span>
+                            <span>
+                              {String(index + 1).padStart(
+                                2,
+                                "0"
+                              )}
+                            </span>
 
-                          <p>
-                            {topic}
-                          </p>
+                            <p>
+                              {topic}
+                            </p>
 
-                        </div>
+                          </div>
 
-                      ))}
+                        )
+                      )}
 
                     </div>
 
@@ -339,19 +377,40 @@ I would like to enroll in this course.`;
                 </div>
 
 
-                {/* PRICE + ENROLL */}
+                {/* ==================================================
+                    COURSE PRICE + ENROLL BUTTON
+                ================================================== */}
 
-                <div className="reellab-bottom">
+                <div className="reellab-course-bottom">
 
-  <button
-    type="button"
-    className="reellab-enroll"
-    onClick={handleEnterCourse}
-  >
-    ENTER COURSE ↗
-  </button>
+                  {/* PRICE */}
 
-</div>
+                  <div className="reellab-course-fee">
+
+                    <small>
+                      COURSE FEE
+                    </small>
+
+                    <strong>
+                      ₹3,000
+                    </strong>
+
+                  </div>
+
+
+                  {/* ENROLL */}
+
+                  <button
+                    type="button"
+                    className="reellab-course-enroll"
+                    onClick={() =>
+                      handleEnroll(course)
+                    }
+                  >
+                    ENROLL NOW ↗
+                  </button>
+
+                </div>
 
               </article>
 
@@ -360,6 +419,7 @@ I would like to enroll in this course.`;
           </div>
 
         </div>
+
       )}
 
     </section>
