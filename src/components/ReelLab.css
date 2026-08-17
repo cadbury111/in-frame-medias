@@ -1,31 +1,39 @@
 /* =========================================
-   REELLAB — PREMIUM COURSE SECTION
+   REELLAB
+   MAIN SECTION
 ========================================= */
 
 .reellab {
   position: relative;
   width: 100%;
-  padding: 130px 6vw;
+  min-height: 100vh;
+
+  padding: 45px 6vw 80px;
+
   background: #0b0b0b;
   color: #f5f5f5;
+
   box-sizing: border-box;
   overflow: hidden;
 }
 
-/* Subtle background glow */
+
+/* subtle luxury glow */
 
 .reellab::before {
   content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
 
-  top: 10%;
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  top: 80px;
   right: -180px;
 
-  background: rgba(212, 166, 55, 0.08);
+  background: rgba(216, 169, 40, 0.07);
 
-  filter: blur(120px);
+  filter: blur(130px);
 
   border-radius: 50%;
 
@@ -44,7 +52,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
@@ -52,9 +60,9 @@
 .reellab-label {
   font-size: 10px;
 
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 
-  color: #888;
+  color: #858585;
 
   text-transform: uppercase;
 }
@@ -69,7 +77,9 @@
 
 
 /* =========================================
-   MAIN CONTENT
+   OLD STYLE HERO
+   LEFT REEL LAB
+   RIGHT COURSE INFO
 ========================================= */
 
 .reellab-content {
@@ -77,42 +87,37 @@
 
   display: grid;
 
-  grid-template-columns: 0.95fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   gap: 9vw;
 
   align-items: center;
 
-  padding-top: 85px;
+  min-height: 650px;
+
+  padding: 70px 0 30px;
 }
 
 
 /* =========================================
-   REELLAB TITLE
+   LEFT TITLE
 ========================================= */
 
 .reellab-title {
   display: flex;
-
   align-items: center;
 }
 
 .reellab-title h2 {
   margin: 0;
 
-  /*
-    Smaller than previous version.
-    Keeps the title strong without
-    overpowering the course details.
-  */
-
-  font-size: clamp(80px, 10.5vw, 165px);
+  font-size: clamp(100px, 11vw, 185px);
 
   line-height: 0.78;
 
   font-weight: 400;
 
-  letter-spacing: -6px;
+  letter-spacing: -7px;
 
   color: #f5f5f5;
 }
@@ -127,21 +132,23 @@
 
 
 /* =========================================
-   COURSE DETAILS
+   RIGHT DETAILS
 ========================================= */
 
 .reellab-details {
-  max-width: 540px;
+  max-width: 650px;
+
+  padding-top: 30px;
 }
 
 .reellab-course-label {
-  display: inline-block;
+  display: block;
 
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 
   font-size: 10px;
 
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 
   color: #d8a928;
 
@@ -149,25 +156,27 @@
 }
 
 .reellab-details h3 {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
 
-  font-size: clamp(30px, 4vw, 52px);
+  font-size: clamp(38px, 4vw, 58px);
 
   line-height: 1;
 
   font-weight: 400;
 
-  letter-spacing: -1.5px;
+  letter-spacing: -2px;
+
+  color: #f5f5f5;
 }
 
 .reellab-details p {
-  max-width: 500px;
+  max-width: 600px;
 
   margin: 0;
 
   font-size: 16px;
 
-  line-height: 1.7;
+  line-height: 1.8;
 
   color: #858585;
 }
@@ -182,30 +191,30 @@
 
   flex-wrap: wrap;
 
-  gap: 10px;
+  gap: 12px;
 
-  margin-top: 35px;
+  margin-top: 38px;
 }
 
 .reellab-features span {
-  padding: 10px 15px;
+  padding: 11px 17px;
 
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 
   border-radius: 100px;
 
-  font-size: 10px;
+  font-size: 9px;
 
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 
-  color: #aaa;
+  color: #999;
 
   text-transform: uppercase;
 }
 
 
 /* =========================================
-   PRICE + BUTTON
+   PRICE + ENTER COURSE
 ========================================= */
 
 .reellab-bottom {
@@ -217,15 +226,15 @@
 
   gap: 30px;
 
-  margin-top: 60px;
+  margin-top: 65px;
 
-  padding-top: 30px;
+  padding-top: 32px;
 
   border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 
-/* Price */
+/* price */
 
 .reellab-price {
   display: flex;
@@ -238,7 +247,7 @@
 .reellab-price small {
   font-size: 9px;
 
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 
   color: #777;
 
@@ -257,15 +266,17 @@
 
 
 /* =========================================
-   ENROLL BUTTON
+   ENTER COURSE BUTTON
 ========================================= */
 
 .reellab-enroll {
-  padding: 17px 28px;
+  min-width: 190px;
 
-  border: 1px solid #d8a928;
+  padding: 19px 27px;
 
   background: transparent;
+
+  border: 1px solid #d8a928;
 
   color: #f5f5f5;
 
@@ -280,8 +291,8 @@
   transition:
     background 0.3s ease,
     color 0.3s ease,
-    box-shadow 0.3s ease,
-    transform 0.3s ease;
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .reellab-enroll:hover {
@@ -289,35 +300,397 @@
 
   color: #080808;
 
-  box-shadow: 0 0 25px rgba(216, 169, 40, 0.3);
-
   transform: translateY(-2px);
+
+  box-shadow: 0 0 25px rgba(216, 169, 40, 0.25);
 }
 
 
 /* =========================================
-   GOLD ACCENT LINE
+   COURSES PAGE
 ========================================= */
 
-.reellab::after {
-  content: "";
+.reellab-courses-page {
+  position: relative;
 
-  position: absolute;
+  padding-top: 35px;
+}
 
-  left: 6vw;
 
-  right: 6vw;
+/* =========================================
+   COURSES TOP BAR
+========================================= */
 
-  bottom: 45px;
+.reellab-courses-top {
+  display: flex;
 
-  height: 1px;
+  align-items: center;
 
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(216, 169, 40, 0.8),
-    transparent
-  );
+  justify-content: space-between;
+
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  color: #777;
+
+  text-transform: uppercase;
+}
+
+.reellab-back {
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  color: #aaa;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition: color 0.3s ease;
+}
+
+.reellab-back:hover {
+  color: #d8a928;
+}
+
+
+/* =========================================
+   COURSES INTRO
+========================================= */
+
+.reellab-courses-intro {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: end;
+
+  gap: 8vw;
+
+  padding: 90px 0 75px;
+}
+
+.reellab-courses-intro > span {
+  grid-column: 1 / -1;
+
+  margin-bottom: -55px;
+
+  font-size: 10px;
+
+  letter-spacing: 4px;
+
+  color: #d8a928;
+}
+
+.reellab-courses-intro h2 {
+  margin: 0;
+
+  font-size: clamp(70px, 8vw, 135px);
+
+  line-height: 0.82;
+
+  font-weight: 400;
+
+  letter-spacing: -5px;
+}
+
+.reellab-courses-intro h2 em {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-weight: 400;
+}
+
+.reellab-courses-intro p {
+  max-width: 470px;
+
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: #858585;
+}
+
+
+/* =========================================
+   COURSE LIST
+========================================= */
+
+.reellab-course-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   COURSE CARD
+========================================= */
+
+.reellab-course-card {
+  position: relative;
+
+  padding: 38px 40px;
+
+  background: #101010;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.reellab-course-card:hover {
+  border-color: rgba(216, 169, 40, 0.55);
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   COURSE TOP
+========================================= */
+
+.reellab-course-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.reellab-course-id {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 30px;
+
+  color: #d8a928;
+}
+
+.reellab-course-type {
+  font-size: 8px;
+
+  letter-spacing: 3px;
+
+  color: #666;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   COURSE BODY
+========================================= */
+
+.reellab-course-body {
+  display: grid;
+
+  grid-template-columns: 0.75fr 1.25fr;
+
+  gap: 8vw;
+
+  padding: 45px 0;
+}
+
+
+/* =========================================
+   COURSE TITLE
+========================================= */
+
+.reellab-course-info h3 {
+  max-width: 600px;
+
+  margin: 0 0 22px;
+
+  font-size: clamp(34px, 4vw, 56px);
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: -2px;
+
+  color: #f5f5f5;
+}
+
+.reellab-course-info p {
+  max-width: 450px;
+
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #777;
+}
+
+
+/* =========================================
+   LEARNING TITLE
+========================================= */
+
+.reellab-learning-title {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  color: #d8a928;
+}
+
+
+/* =========================================
+   TOPIC LIST
+========================================= */
+
+.reellab-topic-list {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.reellab-topic {
+  display: flex;
+
+  gap: 14px;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.reellab-topic:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.reellab-topic:nth-child(even) {
+  margin-left: 20px;
+}
+
+.reellab-topic span {
+  min-width: 22px;
+
+  font-size: 9px;
+
+  color: #555;
+
+  letter-spacing: 1px;
+}
+
+.reellab-topic p {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+
+  color: #aaa;
+}
+
+
+/* =========================================
+   COURSE BOTTOM
+========================================= */
+
+.reellab-course-bottom {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  padding-top: 28px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+/* fee */
+
+.reellab-course-fee {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.reellab-course-fee small {
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  color: #666;
+}
+
+.reellab-course-fee strong {
+  font-size: 40px;
+
+  font-weight: 400;
+
+  color: #f5f5f5;
+}
+
+
+/* =========================================
+   ENROLL NOW
+========================================= */
+
+.reellab-course-enroll {
+  min-width: 190px;
+
+  padding: 18px 28px;
+
+  background: transparent;
+
+  border: 1px solid #d8a928;
+
+  color: #f5f5f5;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.reellab-course-enroll:hover {
+  background: #d8a928;
+
+  color: #080808;
+
+  transform: translateY(-2px);
 }
 
 
@@ -325,7 +698,7 @@
    TABLET
 ========================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   .reellab {
     padding: 100px 6vw;
@@ -334,19 +707,37 @@
   .reellab-content {
     grid-template-columns: 1fr;
 
-    gap: 65px;
+    gap: 60px;
+
+    min-height: auto;
 
     padding-top: 70px;
   }
 
   .reellab-title h2 {
-    font-size: clamp(85px, 18vw, 150px);
-
-    letter-spacing: -5px;
+    font-size: clamp(90px, 17vw, 160px);
   }
 
   .reellab-details {
-    max-width: 650px;
+    max-width: 700px;
+  }
+
+  .reellab-courses-intro {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .reellab-courses-intro > span {
+    grid-column: auto;
+
+    margin-bottom: 0;
+  }
+
+  .reellab-course-body {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
   }
 }
 
@@ -355,15 +746,14 @@
    MOBILE
 ========================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
   .reellab {
-    padding: 80px 24px;
+    padding: 75px 22px 90px;
   }
 
-  .reellab-header {
-    padding-bottom: 16px;
-  }
+
+  /* HEADER */
 
   .reellab-label {
     font-size: 8px;
@@ -375,56 +765,101 @@
     font-size: 9px;
   }
 
-  .reellab-content {
-    padding-top: 55px;
 
-    gap: 50px;
+  /* HERO */
+
+  .reellab-content {
+    gap: 55px;
+
+    padding: 60px 0 20px;
   }
 
-  /*
-    Mobile title is also slightly
-    smaller so it doesn't dominate.
-  */
-
   .reellab-title h2 {
-    font-size: 78px;
+    font-size: 82px;
 
     line-height: 0.8;
 
     letter-spacing: -4px;
   }
 
+  .reellab-course-label {
+    margin-bottom: 20px;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+  }
+
   .reellab-details h3 {
-    font-size: 34px;
+    font-size: 36px;
+
+    letter-spacing: -1px;
   }
 
   .reellab-details p {
     font-size: 14px;
-
-    line-height: 1.65;
   }
 
   .reellab-features {
-    gap: 7px;
-
     margin-top: 28px;
+
+    gap: 7px;
   }
 
   .reellab-features span {
     padding: 8px 11px;
 
-    font-size: 8px;
+    font-size: 7px;
   }
+
+
+  /* HERO FOOTER */
 
   .reellab-bottom {
-    align-items: flex-start;
+  position: relative !important;
 
-    flex-direction: column;
+  width: 100% !important;
+  min-height: 70px;
 
-    margin-top: 45px;
+  margin-top: 65px !important;
+  padding-top: 32px !important;
 
-    gap: 30px;
-  }
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+
+  box-sizing: border-box;
+}
+
+.reellab-bottom .reellab-enroll {
+  margin-left: auto !important;
+
+  position: relative !important;
+
+  min-width: 190px;
+
+  padding: 19px 27px;
+
+  background: transparent;
+
+  border: 1px solid #d8a928;
+
+  color: #f5f5f5;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+}
+
+.reellab-enroll {
+  margin-left: auto;
+}
 
   .reellab-price strong {
     font-size: 36px;
@@ -432,41 +867,153 @@
 
   .reellab-enroll {
     width: 100%;
-
-    padding: 16px 20px;
   }
 
-  .reellab::after {
-    left: 24px;
 
-    right: 24px;
+  /* COURSES TOP */
 
-    bottom: 25px;
+  .reellab-courses-page {
+    padding-top: 15px;
+  }
+
+  .reellab-courses-top {
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  /* COURSES INTRO */
+
+  .reellab-courses-intro {
+    padding: 60px 0;
+
+    gap: 30px;
+  }
+
+  .reellab-courses-intro h2 {
+    font-size: 70px;
+
+    letter-spacing: -4px;
+  }
+
+  .reellab-courses-intro p {
+    font-size: 14px;
+  }
+
+
+  /* COURSE CARD */
+
+  .reellab-course-card {
+    padding: 25px 20px;
+  }
+
+  .reellab-course-id {
+    font-size: 24px;
+  }
+
+  .reellab-course-type {
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  /* COURSE BODY */
+
+  .reellab-course-body {
+    gap: 40px;
+
+    padding: 35px 0;
+  }
+
+  .reellab-course-info h3 {
+    font-size: 34px;
+
+    letter-spacing: -1px;
+  }
+
+  .reellab-course-info p {
+    font-size: 13px;
+  }
+
+
+  /* TOPICS */
+
+  .reellab-topic-list {
+    grid-template-columns: 1fr;
+  }
+
+  .reellab-topic:nth-child(odd),
+  .reellab-topic:nth-child(even) {
+    margin-left: 0;
+
+    margin-right: 0;
+  }
+
+  .reellab-topic p {
+    font-size: 11px;
+  }
+
+
+  /* COURSE FOOTER */
+
+  .reellab-course-bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .reellab-course-fee strong {
+    font-size: 36px;
+  }
+
+  .reellab-course-enroll {
+    width: 100%;
   }
 }
-
-
+/* Hide course fee only on the main REELLAB hero */
+.reellab-content .reellab-price {
+  display: none !important;
+}
 /* =========================================
-   VERY SMALL MOBILE
+   FORCE ENTER COURSE TO RIGHT SIDE
 ========================================= */
 
-@media (max-width: 380px) {
+.reellab-content .reellab-bottom {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 95px !important;
 
-  .reellab {
-    padding: 70px 20px;
-  }
+  display: block !important;
 
-  .reellab-title h2 {
-    font-size: 68px;
+  margin-top: 65px !important;
+  padding-top: 32px !important;
 
-    letter-spacing: -3px;
-  }
+  border-top: 1px solid rgba(255, 255, 255, 0.14) !important;
 
-  .reellab-details h3 {
-    font-size: 30px;
-  }
+  box-sizing: border-box !important;
+}
 
-  .reellab-price strong {
-    font-size: 32px;
-  }
+.reellab-content .reellab-bottom .reellab-enroll {
+  position: absolute !important;
+
+  right: 0 !important;
+  top: 32px !important;
+
+  margin: 0 !important;
+
+  min-width: 190px !important;
+
+  padding: 19px 27px !important;
+
+  background: transparent !important;
+
+  border: 1px solid #d8a928 !important;
+
+  color: #f5f5f5 !important;
+
+  cursor: pointer !important;
 }
