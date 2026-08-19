@@ -59,12 +59,29 @@ ${formData.message}
   return (
     <section className="project-form" id="contact">
 
+      {/* ================================
+          HEADER
+      ================================= */}
+
       <div className="project-form-header">
-        <span>START A PROJECT</span>
-        <span>07</span>
+
+        <span>
+          START A PROJECT
+        </span>
+
+        <span>
+          07
+        </span>
+
       </div>
 
+
+      {/* ================================
+          INTRO
+      ================================= */}
+
       <div className="project-form-intro">
+
         <h2>
           Let's create
           <br />
@@ -75,14 +92,25 @@ ${formData.message}
           Tell us a little about your brand, your goals,
           and the kind of content you want to create.
         </p>
+
       </div>
+
+
+      {/* ================================
+          FORM + ESTIMATE
+      ================================= */}
 
       <div className="project-form-layout">
 
         <form onSubmit={handleSubmit}>
 
+          {/* NAME */}
+
           <div className="form-field">
-            <label>Your Name</label>
+
+            <label>
+              Your Name
+            </label>
 
             <input
               type="text"
@@ -92,10 +120,17 @@ ${formData.message}
               placeholder="Enter your name"
               required
             />
+
           </div>
 
+
+          {/* COMPANY */}
+
           <div className="form-field">
-            <label>Brand / Company</label>
+
+            <label>
+              Brand / Company
+            </label>
 
             <input
               type="text"
@@ -105,12 +140,19 @@ ${formData.message}
               placeholder="Your brand name"
               required
             />
+
           </div>
+
+
+          {/* EMAIL + PHONE */}
 
           <div className="form-row">
 
             <div className="form-field">
-              <label>Email</label>
+
+              <label>
+                Email
+              </label>
 
               <input
                 type="email"
@@ -120,10 +162,15 @@ ${formData.message}
                 placeholder="you@example.com"
                 required
               />
+
             </div>
 
+
             <div className="form-field">
-              <label>WhatsApp / Phone</label>
+
+              <label>
+                WhatsApp / Phone
+              </label>
 
               <input
                 type="tel"
@@ -133,30 +180,58 @@ ${formData.message}
                 placeholder="+91"
                 required
               />
+
             </div>
 
           </div>
 
+
+          {/* CONTENT TYPE + DATE */}
+
           <div className="form-row">
 
             <div className="form-field">
-              <label>Content Type</label>
+
+              <label>
+                Content Type
+              </label>
 
               <select
                 name="contentType"
                 value={formData.contentType}
                 onChange={handleChange}
               >
-                <option>Reels</option>
-                <option>Product Videos</option>
-                <option>Personal Branding</option>
-                <option>Brand Storytelling</option>
-                <option>Social Media Content</option>
+
+                <option>
+                  Reels
+                </option>
+
+                <option>
+                  Product Videos
+                </option>
+
+                <option>
+                  Personal Branding
+                </option>
+
+                <option>
+                  Brand Storytelling
+                </option>
+
+                <option>
+                  Social Media Content
+                </option>
+
               </select>
+
             </div>
 
+
             <div className="form-field">
-              <label>Preferred Start Date</label>
+
+              <label>
+                Preferred Start Date
+              </label>
 
               <input
                 type="date"
@@ -164,12 +239,19 @@ ${formData.message}
                 value={formData.startDate}
                 onChange={handleChange}
               />
+
             </div>
 
           </div>
 
+
+          {/* PROJECT DETAILS */}
+
           <div className="form-field">
-            <label>Tell us about your project</label>
+
+            <label>
+              Tell us about your project
+            </label>
 
             <textarea
               name="message"
@@ -179,9 +261,16 @@ ${formData.message}
               rows="5"
               required
             />
+
           </div>
 
-          <button type="submit" className="submit-project">
+
+          {/* SUBMIT BUTTON */}
+
+          <button
+            type="submit"
+            className="submit-project"
+          >
             Submit Project Request ↗
           </button>
 
@@ -198,23 +287,32 @@ ${formData.message}
             YOUR ESTIMATE
           </span>
 
+
           <div className="estimate-videos">
             {videoCount} Videos
           </div>
+
 
           <div className="estimate-price">
             ₹{totalPrice.toLocaleString("en-IN")}
           </div>
 
+
           <p className="estimate-description">
             Estimated monthly investment
           </p>
 
+
           <div className="estimate-line">
+
             <span className="estimate-line-dot left"></span>
+
             <span className="estimate-line-glow"></span>
+
             <span className="estimate-line-dot right"></span>
+
           </div>
+
 
           <div className="estimate-starting">
 
@@ -229,6 +327,7 @@ ${formData.message}
             </span>
 
           </div>
+
 
           <div className="estimate-disclaimer">
 
